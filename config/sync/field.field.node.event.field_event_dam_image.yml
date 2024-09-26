@@ -1,0 +1,29 @@
+uuid: 924f463d-e64d-43c7-892f-4fc1b001a7fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_dam_image
+    - media.type.acquia_dam_image_asset
+    - node.type.event
+id: node.event.field_event_dam_image
+field_name: field_event_dam_image
+entity_type: node
+bundle: event
+label: 'Event DAM Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      acquia_dam_image_asset: acquia_dam_image_asset
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

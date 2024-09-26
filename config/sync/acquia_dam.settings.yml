@@ -1,0 +1,19 @@
+_core:
+  default_config_hash: LwImylUTdzscxHfVmILtYqYn7gdXYdNMhWwzpzTwTbU
+domain: axelerant.acquiadam.com
+auth_type: authorization_code
+client_id: ''
+client_secret: ''
+allowed_image_styles:
+  large: large
+  media_library: media_library
+  medium: medium
+  thumbnail: thumbnail
+  wide: wide
+allowed_metadata:
+  asset_type: 'Asset Type'
+  description: Description
+  IRecognitionKeywords: 'Image Recognition Keywords'
+  keywords: Keywords
+  usage_rights: 'Usage Rights'
+  year: Year

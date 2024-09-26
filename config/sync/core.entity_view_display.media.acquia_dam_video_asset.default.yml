@@ -1,0 +1,28 @@
+uuid: d9d2b823-1c2f-4b09-83af-a1424fdc53e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.acquia_dam_video_asset
+  module:
+    - acquia_dam
+_core:
+  default_config_hash: uZ9Ia7c8uQotUjlSPA32bqPVnjP7zMtEYKJp7q0f1kg
+id: media.acquia_dam_video_asset.default
+targetEntityType: media
+bundle: acquia_dam_video_asset
+mode: default
+content:
+  acquia_dam_asset_id:
+    type: acquia_dam_embed_code
+    label: hidden
+    settings:
+      embed_style: inline_view
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

@@ -1,0 +1,29 @@
+uuid: 87503a80-b9d9-40b4-92c7-de2c2e36d513
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.acquia_dam_documents_asset
+  module:
+    - acquia_dam
+_core:
+  default_config_hash: UWf3ya5w638L6eixAxcB37oDLNkjWKrBU4lk8E80n00
+id: media.acquia_dam_documents_asset.default
+targetEntityType: media
+bundle: acquia_dam_documents_asset
+mode: default
+content:
+  acquia_dam_asset_id:
+    type: acquia_dam_embed_code
+    label: hidden
+    settings:
+      embed_style: original
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

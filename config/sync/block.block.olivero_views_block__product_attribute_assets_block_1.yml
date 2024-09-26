@@ -1,0 +1,30 @@
+uuid: efc2a032-4ad3-442d-9a7a-6867c696a45a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.product_attribute_assets
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__product_attribute_assets_block_1
+theme: olivero
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:product_attribute_assets-block_1'
+settings:
+  id: 'views_block:product_attribute_assets-block_1'
+  label: Assets
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: Assets
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/products/*/*'

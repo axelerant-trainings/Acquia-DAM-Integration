@@ -1,0 +1,18 @@
+uuid: e4bb7cdc-a755-4dcd-ac8e-196e956f90cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - acquia_dam
+_core:
+  default_config_hash: K8bQSZiFJfzFc9CVRx1vND5Im1B69d6Lh9MTOdl2jMA
+id: acquia_dam_video_asset
+label: 'DAM - Video'
+description: 'DAM sourced Video'
+source: 'acquia_dam_asset:video'
+queue_thumbnail_downloads: true
+new_revision: false
+source_configuration:
+  source_field: acquia_dam_asset_id
+field_map:
+  filename: name

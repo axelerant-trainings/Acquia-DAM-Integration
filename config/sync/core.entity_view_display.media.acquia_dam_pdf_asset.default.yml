@@ -1,0 +1,28 @@
+uuid: b864c047-7cdd-430d-aa00-65c6bcd3a7ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.acquia_dam_pdf_asset
+  module:
+    - acquia_dam
+_core:
+  default_config_hash: NIYeiFbJocq20RJ7UyBgDskG-2DY7zzt60QiAFWjiEE
+id: media.acquia_dam_pdf_asset.default
+targetEntityType: media
+bundle: acquia_dam_pdf_asset
+mode: default
+content:
+  acquia_dam_asset_id:
+    type: acquia_dam_embed_code
+    label: hidden
+    settings:
+      embed_style: link_thumbnail_download
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

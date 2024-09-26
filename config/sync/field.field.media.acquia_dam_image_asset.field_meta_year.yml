@@ -1,0 +1,19 @@
+uuid: 66070975-28a3-44f7-ba98-008ec4e393f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_meta_year
+    - media.type.acquia_dam_image_asset
+id: media.acquia_dam_image_asset.field_meta_year
+field_name: field_meta_year
+entity_type: media
+bundle: acquia_dam_image_asset
+label: 'Meta Year'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

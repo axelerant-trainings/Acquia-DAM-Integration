@@ -1,0 +1,28 @@
+uuid: fd585378-0b5e-4375-ad82-ada504e4adcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.acquia_dam_spinset_asset
+  module:
+    - acquia_dam
+_core:
+  default_config_hash: FgPwbB_PiwJRT8KFokT9-lelBsMhSvCJEx27Ohw3di0
+id: media.acquia_dam_spinset_asset.default
+targetEntityType: media
+bundle: acquia_dam_spinset_asset
+mode: default
+content:
+  acquia_dam_asset_id:
+    type: acquia_dam_embed_code
+    label: hidden
+    settings:
+      embed_style: link_text
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

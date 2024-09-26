@@ -1,0 +1,8 @@
+uuid: 2bfffaa7-5aad-45d3-b18f-f3a7f8b1dc0d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Product Type'
+vid: product_type
+description: 'Acquia DAM product types'
+weight: 0

@@ -1,0 +1,20 @@
+uuid: a45af842-ca0c-4012-a3d3-923abf60f6bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - acquia_dam
+_core:
+  default_config_hash: b8U_I4eY4-9kLbUs0JcjamOiEoEmwjwKllECBiSonFc
+id: acquia_dam_image_asset
+label: 'DAM - Image'
+description: 'DAM sourced Image'
+source: 'acquia_dam_asset:image'
+queue_thumbnail_downloads: true
+new_revision: true
+source_configuration:
+  source_field: acquia_dam_asset_id
+field_map:
+  description: field_meta_description
+  filename: name
+  year: field_meta_year

@@ -1,0 +1,72 @@
+uuid: 1ae15dfa-7a78-469c-a1c2-eda872f78aec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.acquia_dam_image_asset.field_meta_description
+    - field.field.media.acquia_dam_image_asset.field_meta_year
+    - media.type.acquia_dam_image_asset
+  module:
+    - path
+id: media.acquia_dam_image_asset.default
+targetEntityType: media
+bundle: acquia_dam_image_asset
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_meta_description:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_meta_year:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  acquia_dam_alt_text: true
+  acquia_dam_asset_id: true
+  acquia_dam_expiry_date: true

@@ -1,0 +1,8 @@
+uuid: 03fd512b-7378-48df-811f-9ae852f9d378
+langcode: en
+status: true
+dependencies: {  }
+name: 'Product Category'
+vid: product_category
+description: 'Acquia DAM product categories'
+weight: 0

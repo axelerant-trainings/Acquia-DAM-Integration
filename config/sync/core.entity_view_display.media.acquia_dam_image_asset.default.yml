@@ -1,0 +1,33 @@
+uuid: 38fd4c6c-4fd9-45a4-82c1-678f2ecbb93a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.acquia_dam_image_asset.field_meta_description
+    - field.field.media.acquia_dam_image_asset.field_meta_year
+    - media.type.acquia_dam_image_asset
+  module:
+    - acquia_dam
+_core:
+  default_config_hash: ZmrSbFMbvCuXoliTZkpkZCgarZIlEDboMfsvR4MBgTU
+id: media.acquia_dam_image_asset.default
+targetEntityType: media
+bundle: acquia_dam_image_asset
+mode: default
+content:
+  acquia_dam_asset_id:
+    type: acquia_dam_embed_code
+    label: hidden
+    settings:
+      embed_style: original
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_meta_description: true
+  field_meta_year: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true
