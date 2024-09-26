@@ -1,0 +1,4 @@
+services:
+  acquia_dam_integration.api_utility:
+    class: Drupal\acquia_dam_integration\Service\AcquiaDamApiUtility
+    arguments: ['@config.factory', '@entity_type.manager', '@logger.factory', '@http_client']

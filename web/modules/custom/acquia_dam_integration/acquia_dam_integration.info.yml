@@ -1,0 +1,6 @@
+name: 'Acquia DAM Integration'
+type: module
+description: 'Acquia DAM integration including PIM integration.'
+core_version_requirement: ^10
+package: Custom
+configure: acquia_dam_integration.settings

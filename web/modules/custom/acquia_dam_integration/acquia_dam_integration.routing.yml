@@ -1,0 +1,15 @@
+acquia_dam_integration.fetch_products:
+  path: '/acquia-dam/products'
+  defaults:
+    _controller: '\Drupal\acquia_dam_integration\Controller\AcquiaDAMController::fetchProducts'
+    _title: 'Fetch Products'
+  requirements:
+    _permission: 'access content'
+
+acquia_dam_integration.settings:
+  path: '/admin/config/acquia-dam-integration'
+  defaults:
+    _form: '\Drupal\acquia_dam_integration\Form\AcquiaDAMSettingsForm'
+    _title: 'Acquia DAM Integration Settings'
+  requirements:
+    _permission: 'administer site configuration'

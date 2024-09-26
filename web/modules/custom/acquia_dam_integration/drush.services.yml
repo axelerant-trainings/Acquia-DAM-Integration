@@ -1,0 +1,11 @@
+services:
+  acquia_dam_integration.fetch_product_details_as_taxonomy_command:
+    class: Drupal\acquia_dam_integration\Commands\FetchProductDetailsAsTaxonomyCommand
+    arguments: ['@acquia_dam_integration.api_utility', '@http_client', '@logger.factory']
+    tags:
+      - { name: drush.command }
+  acquia_dam_integration.fetch_product_variants_command:
+    class: Drupal\acquia_dam_integration\Commands\FetchProductsCommand
+    arguments: ['@acquia_dam_integration.api_utility', '@http_client', '@entity_type.manager', '@database', '@logger.factory', '@language_manager']
+    tags:
+      - { name: drush.command }
